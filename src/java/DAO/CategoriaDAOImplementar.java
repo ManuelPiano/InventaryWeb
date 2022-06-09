@@ -12,13 +12,14 @@ public class CategoriaDAOImplementar implements CategoriaDAO {
     ConexionBD conn;
 
     public CategoriaDAOImplementar() {
-        this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
+        //this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
     }
     
     
     
     @Override
     public List<Categoria> Listar() {
+        this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
         StringBuilder miSQL = new StringBuilder();
         miSQL.append("select * from tb_categoria;");
         List<Categoria> lista = new ArrayList<Categoria>();
@@ -37,19 +38,35 @@ public class CategoriaDAOImplementar implements CategoriaDAO {
             this.conn.cerrarConexion();
         }
         
-        
         return lista;
-        
     }
 
     @Override
     public List<Categoria> Listar2() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public Categoria editarCat(int id_cat_edit) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
+        Categoria categoria = new Categoria();
+        StringBuilder miSQL = new StringBuilder();
+        miSQL.append("select * from tb_categoria where id_categoria = ").append(id_cat_edit);
+        try{
+            ResultSet resultadoSQL = this.conn.consultaSQL(miSQL.toString());
+            while(resultadoSQL.next()){
+                categoria.setId_categoria(resultadoSQL.getInt("id_categoria"));
+                categoria.setNom_categoria(resultadoSQL.getString("nom_categoria"));
+                categoria.setEstado_categoria(resultadoSQL.getInt("estado_categoria"));
+            }
+            
+        }catch(Exception e){
+            
+        }finally{
+            this.conn.cerrarConexion();
+        }
+        
+        return categoria;
     }
 
     @Override
