@@ -20,8 +20,8 @@
          <%@include file = "../WEB-INF/Vistas-Parciales/encabezado.jspf" %>
          <div style='width: 60%'>
         <h1 class='text-center'>Información de Categoria</h1>
-        <!--<form action="Vistas-Categorias/editarCategorias.jsp" method="post">-->
-        <form action="" method="post">
+        <form action="<%= request.getContextPath() %>/Vistas-Categorias/editarCategorias.jsp" method="post">
+        <!--<form action="" method="post">-->
         <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-2 col-form-label">ID Categoria:</label>
             <div class="col-sm-10">
