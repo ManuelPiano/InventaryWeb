@@ -1,0 +1,9 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div>
+    <div class="encabezado">
+        Sistema de Control de Inventario
+        <a href="Index" class="btn btn-primary">Inicio</a>
+        <a href="categorias" class="btn btn-success">Catogias</a>
+    </div>
+    <div class="contenido">

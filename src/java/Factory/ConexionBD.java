@@ -24,7 +24,7 @@ public abstract class ConexionBD {
         boolean guardar = true;
         try{
             st = conexion.createStatement();
-            st.executeQuery(consulta);
+            st.executeUpdate(consulta);
         }catch(SQLException ex){
             guardar = false;
             ex.printStackTrace();

@@ -8,9 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CategoriaDAOImplementar implements CategoriaDAO {
-    
+   
     ConexionBD conn;
-
     public CategoriaDAOImplementar() {
         //this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
     }
@@ -71,12 +70,55 @@ public class CategoriaDAOImplementar implements CategoriaDAO {
 
     @Override
     public boolean guardarCat(Categoria categoria) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
+        boolean guarda = false;
+        
+        try{
+            if(categoria.getId_categoria() == 0){
+                System.out.println("Guardar");
+                StringBuilder miSQL = new StringBuilder();
+                miSQL.append("INSERT INTO tb_categoria(nom_categoria, estado_categoria) values('");
+                miSQL.append(categoria.getNom_categoria() + "', ").append(categoria.getEstado_categoria());
+                miSQL.append(");");
+                this.conn.ejecutarSQL(miSQL.toString());
+            }else if(categoria.getId_categoria() > 0){
+                
+                System.out.println("Update");
+                StringBuilder miSQL = new StringBuilder();
+                miSQL.append("UPDATE tb_categoria SET id_categoria = ").append(categoria.getId_categoria());
+                miSQL.append(", nom_categoria = '").append(categoria.getNom_categoria());
+                miSQL.append("', estado_categoria = ").append(categoria.getEstado_categoria());
+                miSQL.append(" WHERE id_categoria = ").append(categoria.getId_categoria()).append(";");
+                this.conn.ejecutarSQL(miSQL.toString());
+            }
+           guarda = true;
+        }catch(Exception e){
+            
+        }finally{
+            this.conn.cerrarConexion();
+        }
+        
+        return guarda;
     }
 
     @Override
     public boolean borrarCat(int id_cat_borrar) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
+        boolean borra = false;
+        try{
+            StringBuilder miSQL = new StringBuilder();
+            miSQL.append("Delete from tb_categoria where id_categoria = ").append(id_cat_borrar);
+            this.conn.ejecutarSQL(miSQL.toString());
+            borra = true;
+        }catch(Exception e){
+            
+        }finally{
+            this.conn.cerrarConexion();
+        }
+        
+        return borra;
     }
+
+ 
     
 }
