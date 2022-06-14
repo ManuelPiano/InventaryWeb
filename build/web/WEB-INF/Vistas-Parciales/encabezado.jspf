@@ -4,6 +4,6 @@
     <div class="encabezado">
         Sistema de Control de Inventario
         <a href="Index" class="btn btn-primary">Inicio</a>
-        <a href="categorias" class="btn btn-success">Catogias</a>
+        <a href="categorias?opcion=listar" class="btn btn-success">Catogias</a>
     </div>
     <div class="contenido">

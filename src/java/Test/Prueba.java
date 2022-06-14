@@ -12,9 +12,9 @@ public class Prueba {
     public static void main(String[] args) {
         Prueba evaluar = new Prueba();
         //evaluar.editarCategoria();
-        //evaluar.listarcategorias();
+        evaluar.listarcategorias();
         //evaluar.guardarCatgoria();
-        evaluar.eliminarCategoria();
+        //evaluar.eliminarCategoria();
        
         
     }

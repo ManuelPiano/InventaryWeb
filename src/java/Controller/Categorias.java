@@ -44,14 +44,15 @@ public class Categorias extends HttpServlet {
          String id_cat = request.getParameter("id");
          String nombre_cat = request.getParameter("nombre");
          String estado_cat = request.getParameter("estado");
-         
+         /*
          System.out.println("La opcion es: " + estado);
          System.out.println("El ID es: " + id_cat);
          System.out.println("El nombre es: " + nombre_cat);
          System.out.println("El estado es. " + estado_cat);
+                 */
     
-         if(estado.equals("guardar")){
-             
+         if(estado.equals("listar")){
+             this.listaCategorias(request, response);
          }else if(estado.equals("editar")){
              System.out.println("Vamos bien.");
              RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/editarCategorias.jsp?id="+id_cat+"&&nombre="+nombre_cat+"&&estado="+estado_cat);
