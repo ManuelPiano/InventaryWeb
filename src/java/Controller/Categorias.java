@@ -54,12 +54,14 @@ public class Categorias extends HttpServlet {
          if(estado.equals("listar")){
              this.listaCategorias(request, response);
          }else if(estado.equals("editar")){
-             System.out.println("Vamos bien.");
+             System.out.println("Editando categorias....");
              RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/editarCategorias.jsp?id="+id_cat+"&&nombre="+nombre_cat+"&&estado="+estado_cat);
-            dispatcher.forward(request, response);
+             dispatcher.forward(request, response);
              
          }else if(estado.equals("eliminar")){
-            
+             System.out.println("Baja de categorias...");
+             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/bajaCategorias.jsp?id="+id_cat+"&&nombre="+nombre_cat);
+             dispatcher.forward(request, response);
          }else{
               
          }

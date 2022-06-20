@@ -49,18 +49,18 @@
         </form>
           
           <%
-     String dato = request.getParameter("aviso");
-     if(dato!=null){
-         //out.print("Registro Actualizado Correctamente");
-         //System.out.println("End");
-    %>
-            <div class="alert alert-success" role="alert">
-            Registro Actualizado Correctamente!!
-          </div>
-    <%   
-        }
-    %>
-          
+            String dato = request.getParameter("aviso");
+            if(dato!=null){
+                //out.print("Registro Actualizado Correctamente");
+                //System.out.println("End");
+           %>
+                   <div class="alert alert-success" role="alert">
+                   Registro Actualizado Correctamente!!
+                 </div>
+           <%   
+               }
+           %>
+
         </div>
          <%@include file = "../WEB-INF/Vistas-Parciales/pie.jspf" %>
     </body>
