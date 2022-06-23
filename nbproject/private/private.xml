@@ -3,7 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/src/java/Controller/Index.java</file>
             <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/web/index.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/web/Vistas-Categorias/listarCategorias.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/src/java/Controller/Categorias.java</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/web/WEB-INF/Vistas-Parciales/encabezado.jspf</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/web/Vistas-Categorias/bajaCategorias.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/src/java/Controller/BajaCategoria.java</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/web/Vistas-Categorias/editarCategorias.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/GitHub/InventaryWeb/src/java/Controller/actualizoCategoria.java</file>
         </group>
     </open-files>
 </project-private>

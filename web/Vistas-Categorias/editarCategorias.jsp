@@ -16,7 +16,7 @@
         <title>JSP Page</title>
         <%@include file = "../WEB-INF/Vistas-Parciales/css-js.jspf" %>
     </head>
-    <body class="m-0 row justify-content-center">
+    <body class="justify-content-center">
          <%@include file = "../WEB-INF/Vistas-Parciales/encabezado.jspf" %>
          <div class="col-auto bg-gray p-5 text-center">
         <h1 class='text-center'>Información de Categoria</h1>
@@ -55,7 +55,7 @@
                 //System.out.println("End");
            %>
                    <div class="alert alert-success" role="alert">
-                   Registro Actualizado Correctamente!!
+                   Modificado!!
                  </div>
            <%   
                }
