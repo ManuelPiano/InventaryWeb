@@ -16,6 +16,10 @@
         <servlet-name>BajaCategoria</servlet-name>
         <servlet-class>Controller.BajaCategoria</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Controller.Login</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>BajaCategoria</servlet-name>
         <url-pattern>/bajaCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/sesion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

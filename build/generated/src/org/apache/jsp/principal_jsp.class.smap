@@ -1,0 +1,22 @@
+SMAP
+principal_jsp.java
+JSP
+*S JSP
+*F
++ 0 principal.jsp
+principal.jsp
++ 1 css-js.jspf
+WEB-INF/Vistas-Parciales/css-js.jspf
++ 2 encabezado.jspf
+WEB-INF/Vistas-Parciales/encabezado.jspf
++ 3 pie.jspf
+WEB-INF/Vistas-Parciales/pie.jspf
+*L
+1,8:51
+1#1,7:59
+8#0,4:66
+1#2,62:70
+11#0,3:132
+1#3,8:135
+13#0,4:142
+*E

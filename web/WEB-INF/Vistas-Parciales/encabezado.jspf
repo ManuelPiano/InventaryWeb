@@ -42,12 +42,25 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Productos</a>
                   </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Usuarios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="#">Seguridad</a></li>
+                      <li class="nav-item dropdown"><hr class="dropdown-divider"></li>
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="#">Cerrar</a></li>
+                    </ul>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Reportes</a>
                   </li>
+                  <!--
                   <li class="nav-item">
                     <a class="nav-link" href="#">Cerrar Sesión</a>
-                  </li>
+                  </li>-->
+                  
                   <!--<li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                   </li>-->

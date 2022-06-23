@@ -7,16 +7,12 @@ JSP
 index.jsp
 + 1 css-js.jspf
 WEB-INF/Vistas-Parciales/css-js.jspf
-+ 2 encabezado.jspf
-WEB-INF/Vistas-Parciales/encabezado.jspf
-+ 3 pie.jspf
++ 2 pie.jspf
 WEB-INF/Vistas-Parciales/pie.jspf
 *L
-1,8:51
-1#1,7:59
-8#0,4:66
-1#2,9:70
-11#0,3:79
-1#3,8:82
-13#0,4:89
+1,13:50
+1#1,7:63
+13#0,40:70
+1#2,8:110
+52#0,5:117
 *E

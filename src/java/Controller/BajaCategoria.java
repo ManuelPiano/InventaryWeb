@@ -45,7 +45,7 @@ public class BajaCategoria extends HttpServlet {
          
          CategoriaDAO categoria = new CategoriaDAOImplementar();
          //Categoria cat = new Categoria();
-         if(categoria.borrarCat(Integer.parseInt(id))){
+         if(categoria.borrarCat(Integer.parseInt(id))==true){
              System.out.println("Registro eliminado correctamente.");
              this.listaCategorias(request, response);
          }else{
