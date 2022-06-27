@@ -12,9 +12,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(2);
+    _jspx_dependants = new java.util.ArrayList<String>(1);
     _jspx_dependants.add("/WEB-INF/Vistas-Parciales/css-js.jspf");
-    _jspx_dependants.add("/WEB-INF/Vistas-Parciales/pie.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -88,7 +87,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link href=\"css/signin.css\" type=\"text/css\" rel=\"stylesheet\">\n");
       out.write("  </head>\n");
       out.write("  <body class=\"text-center\">\n");
-      out.write("      \n");
+      out.write("      <main class=\"form-signin w-100 m-auto\">\n");
       out.write("      <form class=\"form-signin\" action=\"sesion\" method=\"POST\">\n");
       out.write("      <img class=\"mb-4\" src=\"assets/img/login.png\" alt=\"\" width=\"72\" height=\"72\">\n");
       out.write("      <h1 class=\"h3 mb-3 font-weight-normal\">Iniciar Sesión</h1>\n");
@@ -106,15 +105,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Ingresar</button>\n");
       out.write("      <p class=\"mt-5 mb-3 text-muted\">MEGATEC-ZACATECOLUCA &copy; 2022</p>\n");
       out.write("    </form>\n");
-      out.write("    ");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("</div>\r\n");
-      out.write("<div class=\"pie\">\r\n");
-      out.write("    &COPY; ITCA-FEPADE\r\n");
-      out.write("</div>\r\n");
-      out.write("</div>\r\n");
-      out.write("\n");
+      out.write("          </main>\n");
       out.write("</body>\n");
       out.write("</html>\n");
       out.write("\n");

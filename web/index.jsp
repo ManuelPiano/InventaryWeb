@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title>Sign-in Inventario</title>
-    <link rel="icon" href="assets/img/favicon3.ico" type="image/x-icon">
+    <!--<link rel="icon" href="assets/img/favicon3.ico" type="image/x-icon">-->
     <!-- Bootstrap core CSS -->
     <!-- <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">-->
     <!--<link href="css/bootstrap.css" type="text/css" rel="stylesheet">-->
