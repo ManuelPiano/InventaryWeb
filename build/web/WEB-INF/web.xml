@@ -24,6 +24,10 @@
         <servlet-name>Salir</servlet-name>
         <servlet-class>Controller.Salir</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Productos</servlet-name>
+        <servlet-class>Controller.Productos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>Salir</servlet-name>
         <url-pattern>/salir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Productos</servlet-name>
+        <url-pattern>/productos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
