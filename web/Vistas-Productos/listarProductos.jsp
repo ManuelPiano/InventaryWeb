@@ -1,4 +1,5 @@
 <%@page import="Model.Producto"%>
+<%@page import="Model.Categoria"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
             <a href="<%= request.getContextPath() %>/productos?opcion=crear" class ="btn btn-success btn-sm glyphicon glyphicon-pencil" role="button">
                 Nuevo producto
             </a>
-            <h3>Listado de Categorias</h3>
+            <h3>Listado de Productos</h3>
             <table class="table table-striped">
                 <tr>
                     <th>
@@ -39,24 +40,28 @@
                         UNIDAD DE MEDIDA
                     </th>
                     <th>
+                        CATEGORIA
+                    </th>
+                    <th>
                         ACCIONES
                     </th>
                 </tr>
                 <%
                  for(int i = 0; i < lista.size(); i++){
-                    Producto producto = new producto();
+                    Producto producto = new Producto();
                     producto = (Producto)lista.get(i);
                  %>
                  <tr>
-                     <td><%= producto.getId_producto() %></td>
+                 <td><%= producto.getId_producto() %></td>
                      <td><%= producto.getNom_producto() %></td>
                      <td><%= producto.getEstado() %></td>
                      <td><%= producto.getStock() %></td>
-                     <td><%= producto.getPrecio() %> </td>
+                     <td>$<%= producto.getPrecio() %> </td>
                      <td> <%= producto.getUnidadMedida() %> </td>
+                     <td> <%= producto.getCatogoria_nom() %> </td>
                      <td>
-                         <a href="productos?opcion=editar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>&&estado=<%= producto.getEstado() %> &&stock="<%= producto.getStock()%>" class="btn btn-info btn-sm glyphicon glyphicon-edit" role="button">Editar</a>
-                         <a href="productos?opcion=eliminar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>" class="btn btn-danger btn-sm glyphicon glyphicon-remove" role="button">Eliminar</a>
+                         <a href="productos?opcion=editar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>&&estado= <%= producto.getEstado() %> &&stock <%= producto.getStock()%> &&precio <%= producto.getPrecio() %> &&UnidadMedida <%= producto.getUnidadMedida ()%>" class="btn btn-info btn-sm glyphicon glyphicon-edit" role="button">Editar</a>
+                         <a href="productos?opcion=eliminar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>&&estado= <%= producto.getEstado() %>" class="btn btn-danger btn-sm glyphicon glyphicon-remove" role="button">Eliminar</a>
                      </td>
                  </tr>
                  <%

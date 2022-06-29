@@ -16,7 +16,7 @@ public class ProductoDAOImplementar implements ProductoDAO{
     public List<Producto> Listar() {
         this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
         StringBuilder miSQL = new StringBuilder();
-        miSQL.append("select * from tb_producto;");
+        miSQL.append("SELECT PROD.id_producto, PROD.nom_producto, PROD.stock, PROD.precio, PROD.unidad_de_medida, PROD.estado_producto, CAT.nom_categoria FROM tb_producto AS PROD INNER JOIN tb_categoria AS CAT ON PROD.categoria=CAT.id_categoria; ");
         List<Producto> lista = new ArrayList<Producto>();
         try{
             ResultSet resultadoSQL = this.conn.consultaSQL(miSQL.toString());
@@ -27,7 +27,8 @@ public class ProductoDAOImplementar implements ProductoDAO{
                 producto.setEstado(resultadoSQL.getInt("estado_producto"));
                 producto.setPrecio(resultadoSQL.getFloat("precio"));
                 producto.setStock(resultadoSQL.getFloat("stock"));
-                producto.setUnidadMedida(resultadoSQL.getString("medida"));
+                producto.setUnidadMedida(resultadoSQL.getString("unidad_de_medida"));
+                producto.setCatogoria_nom(resultadoSQL.getString("nom_categoria"));
                 lista.add(producto);
             }
         }catch(Exception ex){
@@ -73,7 +74,7 @@ public class ProductoDAOImplementar implements ProductoDAO{
         boolean borra = false;
         try{
             StringBuilder miSQL = new StringBuilder();
-            miSQL.append("Delete from id_producto where id_producto = ").append(id_pro_borrar);
+            miSQL.append("Delete from td_producto where id_producto = ").append(id_pro_borrar);
             this.conn.ejecutarSQL(miSQL.toString());
             borra = true;
         }catch(Exception e){
@@ -100,7 +101,12 @@ public class ProductoDAOImplementar implements ProductoDAO{
                 StringBuilder miSQL = new StringBuilder();
                 miSQL.append("INSERT INTO tb_producto(nom_producto, estado_producto, precio, stock, unidad_de_medida) values('");
                 miSQL.append(producto.getNom_producto()+ "', ").append(producto.getEstado());
-                miSQL.append(");");
+                miSQL.append(", ").append(producto.getPrecio());
+                miSQL.append(", ").append(producto.getStock());
+                miSQL.append(", '").append(producto.getUnidadMedida());
+
+
+                miSQL.append("');");
                 this.conn.ejecutarSQL(miSQL.toString());
             }else if(producto.getId_producto()> 0){
                 
