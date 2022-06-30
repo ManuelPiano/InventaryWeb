@@ -1,7 +1,7 @@
 <%-- 
     Document   : bajaProductos
     Created on : 28 jun. 2022, 21:47:22
-    Author     : manuelpiano31
+    Author     : jennisurio
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

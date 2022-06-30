@@ -28,6 +28,10 @@
         <servlet-name>Productos</servlet-name>
         <servlet-class>Controller.Productos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BajaProductos</servlet-name>
+        <servlet-class>Controller.BajaProductos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>Productos</servlet-name>
         <url-pattern>/productos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BajaProductos</servlet-name>
+        <url-pattern>/bajaProductos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
