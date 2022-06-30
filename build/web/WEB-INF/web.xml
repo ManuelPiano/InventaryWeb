@@ -32,6 +32,10 @@
         <servlet-name>BajaProductos</servlet-name>
         <servlet-class>Controller.BajaProductos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ActualizoProductos</servlet-name>
+        <servlet-class>Controller.ActualizoProductos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>BajaProductos</servlet-name>
         <url-pattern>/bajaProductos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizoProductos</servlet-name>
+        <url-pattern>/actualizoProductos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
