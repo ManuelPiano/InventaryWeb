@@ -60,7 +60,7 @@
                      <td> <%= producto.getUnidadMedida() %> </td>
                      <td> <%= producto.getCatogoria_nom() %> </td>
                      <td>
-                         <a href="productos?opcion=editar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>&&estado= <%= producto.getEstado() %> &&stock <%= producto.getStock()%> &&precio <%= producto.getPrecio() %> &&UnidadMedida <%= producto.getUnidadMedida ()%>" class="btn btn-info btn-sm glyphicon glyphicon-edit" role="button">Editar</a>
+                         <a href="productos?opcion=editar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>&&estado= <%= producto.getEstado() %> &&stock= <%= producto.getStock()%> &&precio= <%= producto.getPrecio() %> &&UnidadMedida= <%= producto.getUnidadMedida ()%>" class="btn btn-info btn-sm glyphicon glyphicon-edit" role="button">Editar</a>
                          <a href="productos?opcion=eliminar&&id=<%= producto.getId_producto() %>&&nombre=<%= producto.getNom_producto() %>&&estado= <%= producto.getEstado() %>" class="btn btn-danger btn-sm glyphicon glyphicon-remove" role="button">Eliminar</a>
                      </td>
                  </tr>

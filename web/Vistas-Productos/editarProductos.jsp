@@ -1,3 +1,8 @@
+<%@page import="Model.Categoria"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.CategoriaDAOImplementar"%>
+<%@page import="DAO.CategoriaDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -5,10 +10,10 @@
         String id_pro =request.getParameter("id");
         String nombre_pro = request.getParameter("nombre");
         String estado_pro = request.getParameter("estado");
-        String stock_pro = request.getParameter("stock");
+        String stock = request.getParameter("stock");
         String precio_pro = request.getParameter("precio");
         String unidad_medida = request.getParameter("UnidadMedida");
-        String categoria = request.getParameter("NomCatogoria");
+        String categoria = request.getParameter("categoria");
     
     /*out.print("El ID de la categoria es: " + id_cat);
     out.print("El nombre de la categoria es: " + nombre_cat);
@@ -49,7 +54,7 @@
            <div class="mb-3 row">
           <label for="inputPassword" class="col-sm-2 col-form-label">Stock Producto</label>
           <div class="col-sm-10">
-              <input type="text" value='<%= stock_pro %>' name="stock" id="stock" class="form-control" placeholder="stock Producto" required="true">
+              <input type="text" value='<%= stock %>' name="stock" id="stock" class="form-control" placeholder="stock Producto" required="true">
           </div>
         </div>
            <div class="mb-3 row">
@@ -67,7 +72,7 @@
           <div class="mb-3 row">
           <label for="inputPassword" class="col-sm-2 col-form-label">Categoria Producto</label>
           <div class="col-sm-10">
-              <input type="text" value='<%= categoria %>' name="NomCatogoria" id="NomCatogoria" class="form-control" placeholder="Categoria" required="true">
+              <input type="text" value='<%= categoria %>' name="categoria" id="categoria" class="form-control" placeholder="Categoria" required="true">
           </div>
         </div>
           

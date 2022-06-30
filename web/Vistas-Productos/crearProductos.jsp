@@ -69,7 +69,7 @@
                                    CategoriaDAO categoria = new CategoriaDAOImplementar();
                                    List<Categoria> cat = new ArrayList<Categoria>();
                                    
-                                   cat = categorias.listar();
+                                   cat = categoria.Listar();
                                    for(int i = 0; i < cat.size() ; i++)
                                    {
                                    Categoria categ = cat.get(i);

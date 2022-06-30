@@ -99,11 +99,12 @@ public class ProductoDAOImplementar implements ProductoDAO{
             if(producto.getId_producto()== 0){
                 System.out.println("Guardar");
                 StringBuilder miSQL = new StringBuilder();
-                miSQL.append("INSERT INTO tb_producto(nom_producto, estado_producto, precio, stock, unidad_de_medida) values('");
+                miSQL.append("INSERT INTO tb_producto(nom_producto, estado_producto, precio, stock, unidad_de_medida, categoria) values('");
                 miSQL.append(producto.getNom_producto()+ "', ").append(producto.getEstado());
                 miSQL.append(", ").append(producto.getPrecio());
                 miSQL.append(", ").append(producto.getStock());
                 miSQL.append(", '").append(producto.getUnidadMedida());
+                miSQL.append("', '").append(producto.getCatogoria_id());
 
 
                 miSQL.append("');");

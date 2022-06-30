@@ -48,7 +48,8 @@ public class Productos extends HttpServlet {
          String estado_pro = request.getParameter("estado");
          String stock_pro = request.getParameter("stock");
          String precio_pro = request.getParameter("precio");
-         String unidad_medida = request.getParameter("unidad");
+         String unidad_medida = request.getParameter("UnidadMedida");
+         String categoria = request.getParameter("cat");
          
          
          
@@ -62,7 +63,7 @@ public class Productos extends HttpServlet {
              this.listaProductos(request, response);
          }else if(estado.equals("editar")){
              System.out.println("Editando Productos....");
-             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Productos/editarProductos.jsp?id="+id_pro+"&&nombre="+nombre_pro+"&&estado="+estado_pro+"&&precio="+precio_pro+"&&stock"+stock_pro+"&&unidad"+unidad_medida);
+             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Productos/editarProductos.jsp?id="+id_pro+"&&nombre="+nombre_pro+"&&estado="+estado_pro+"&&precio="+precio_pro+"&&stock="+stock_pro+"&&UnidadMedida="+unidad_medida+"&&cat="+categoria);
              dispatcher.forward(request, response);
          }else if(estado.equals("eliminar")){
              System.out.println("Baja de Productos...");
@@ -89,7 +90,7 @@ public class Productos extends HttpServlet {
         producto.setPrecio(Double.parseDouble(request.getParameter("txtprecio")));
         producto.setStock(Double.parseDouble(request.getParameter("txtstock")));
         producto.setUnidadMedida(request.getParameter("txtUnidad"));
-        producto.setCatogoria_nom(request.getParameter("txtcatogoria"));
+        producto.setCatogoria_id(Integer.parseInt(request.getParameter("txtcatogoria")));
         ProductoDAO guardaProducto = new ProductoDAOImplementar();
         guardaProducto.guardarPro(producto);
         this.listaProductos(request, response);
