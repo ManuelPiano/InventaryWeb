@@ -1,17 +1,17 @@
 
 package Controller;
 import DAO.UsuarioDAO;
-import DAO.UsuarioDAOImplementar;
+import DAO.UsuarioDaoImplementar;
+import Model.Usuario;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import model.Usuario;
+
+import Model.Usuario;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class loggin extends HttpServlet {
 
@@ -61,7 +61,7 @@ public class loggin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        UsuarioDAO usuario = new UsuarioDAOImplementar();
+        UsuarioDAO usuario = new UsuarioDaoImplementar();
         Usuario usu = new Usuario();
         
         String opcion = request.getParameter("opcion");
@@ -73,7 +73,6 @@ public class loggin extends HttpServlet {
                 usu.setCorreo(request.getParameter("txtCorreoUsuario"));
                 usu.setUsuario(request.getParameter("txtUsuUsuario"));
                 usu.setClave(request.getParameter("txtClaveUsuario"));
-                usu.setTelefono(Long.parseLong(request.getParameter("txtTelefonoUsuario")));
                 usu.setEstado(Integer.parseInt(request.getParameter("txtEstadoUsuario")));
                 usu.setTipo(Integer.parseInt(request.getParameter("txtTipooUsuario")));
                 usu.setPregunta(request.getParameter("txtPreguntaUsuario"));
