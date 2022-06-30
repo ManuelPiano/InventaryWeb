@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 23-06-2022 a las 22:46:18
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.1.6
+-- Servidor: localhost
+-- Tiempo de generación: 30-06-2022 a las 02:49:51
+-- Versión del servidor: 10.4.21-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_inventario`
 --
-CREATE DATABASE IF NOT EXISTS `bd_inventario` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `bd_inventario`;
 
 -- --------------------------------------------------------
 
@@ -40,9 +38,11 @@ CREATE TABLE `tb_categoria` (
 --
 
 INSERT INTO `tb_categoria` (`id_categoria`, `nom_categoria`, `estado_categoria`) VALUES
-(1001, 'Tester', 1),
 (1002, 'Impresora HP', 1),
-(1005, 'Pupusas', 1);
+(1005, 'Pupusas', 1),
+(1011, 'lknlk', 1),
+(1012, 'lknlk', 1),
+(1014, 'lmlkmkmk', 1);
 
 -- --------------------------------------------------------
 
@@ -59,6 +59,14 @@ CREATE TABLE `tb_producto` (
   `estado_producto` tinyint(1) DEFAULT NULL,
   `categoria` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tb_producto`
+--
+
+INSERT INTO `tb_producto` (`id_producto`, `nom_producto`, `stock`, `precio`, `unidad_de_medida`, `estado_producto`, `categoria`) VALUES
+(1, 'Mesa', '4.00', '5.00', 'pieza', 1, 1002),
+(4, 'asdasd', '4.00', '1.50', 'sls', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -85,7 +93,7 @@ CREATE TABLE `tb_usuario` (
 --
 
 INSERT INTO `tb_usuario` (`id`, `nombre`, `apellido`, `correo`, `usuario`, `clave`, `tipo`, `estado`, `pregunta`, `respuesta`, `fecha_registro`) VALUES
-(1, 'Manuel de Jesus', 'Gamez Lopez', 'manuel.gamez@itca.edu.sv', 'manuel.gamez', '827ccb0eea8a706c4c34a16891f84e7b', 1, 1, '¿Cual es el nombre de tu primer mascota?', 'maylor', '2022-06-23 18:38:56');
+(1, 'Manuel', 'Alvarado', 'manuel.alvarado21@itca.edu.sv', 'manuel.piano', 'c5e5e860f708265f831845367166c61f', 1, 1, '¿Cual es el nombre de tu primer mascota?', 'Toffy', '2022-06-28 04:43:54');
 
 --
 -- Índices para tablas volcadas
@@ -118,13 +126,13 @@ ALTER TABLE `tb_usuario`
 -- AUTO_INCREMENT de la tabla `tb_categoria`
 --
 ALTER TABLE `tb_categoria`
-  MODIFY `id_categoria` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1011;
+  MODIFY `id_categoria` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1015;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_producto`
 --
 ALTER TABLE `tb_producto`
-  MODIFY `id_producto` int(9) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_producto` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_usuario`
