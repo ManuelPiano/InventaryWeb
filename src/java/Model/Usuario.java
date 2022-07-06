@@ -7,14 +7,23 @@ public class Usuario {
     String correo;
     String usuario;
     String clave;
-    int tipo;
-    int estado;
+    String tipo;
+    String estado;
     String fecha;
 
     public Usuario() {
+        this.id = 0;
+        this.nombre = "";
+        this.apellido = "";
+        this.correo = "";
+        this.usuario = "";
+        this.clave = "";
+        this.tipo = "";
+        this.estado = "";
+        this.fecha = "";
     }
-
-    public Usuario(int id, String nombre, String apellido, String correo, String usuario, String clave, int tipo, int estado, String fecha) {
+    
+    public Usuario(int id, String nombre, String apellido, String correo, String usuario, String clave, String tipo, String estado, String fecha) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -78,19 +87,19 @@ public class Usuario {
         this.clave = clave;
     }
 
-    public int getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(int tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
-    public int getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 

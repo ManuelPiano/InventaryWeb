@@ -29,7 +29,7 @@
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
 				</div>
-      <form class="login100-form validate-form" action="sesion" method="POST">
+      <form class="login100-form validate-form" action="InicioSesion" method="POST">
           <span class="login100-form-title">
 						Sistema de Inventario
 					</span>
@@ -66,7 +66,7 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
+						<a class="txt2" href="vista-usuario/RegUsuario.jsp">
 							Crear Cuenta
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>

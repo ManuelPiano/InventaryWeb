@@ -32,6 +32,10 @@
         <servlet-name>ActualizoProductos</servlet-name>
         <servlet-class>Controller.ActualizoProductos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Controller.Login</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>ActualizoProductos</servlet-name>
         <url-pattern>/actualizoProductos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/InicioSesion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
