@@ -9,14 +9,12 @@ public class Usuario {
     String clave;
     int tipo;
     int estado;
-    String pregunta;
-    String respuesta;
     String fecha;
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String apellido, String correo, String usuario, String clave, int tipo, int estado, String pregunta, String respuesta, String fecha) {
+    public Usuario(int id, String nombre, String apellido, String correo, String usuario, String clave, int tipo, int estado, String fecha) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -25,8 +23,7 @@ public class Usuario {
         this.clave = clave;
         this.tipo = tipo;
         this.estado = estado;
-        this.pregunta = pregunta;
-        this.respuesta = respuesta;
+  
         this.fecha = fecha;
     }
 
@@ -95,22 +92,6 @@ public class Usuario {
 
     public void setEstado(int estado) {
         this.estado = estado;
-    }
-
-    public String getPregunta() {
-        return pregunta;
-    }
-
-    public void setPregunta(String pregunta) {
-        this.pregunta = pregunta;
-    }
-
-    public String getRespuesta() {
-        return respuesta;
-    }
-
-    public void setRespuesta(String respuesta) {
-        this.respuesta = respuesta;
     }
 
     public String getFecha() {
