@@ -3,21 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/Salir.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/ActualizoProductos.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/web/Vistas-Productos/editarProductos.jsp</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/DAO/ProductoDAO.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/web/Vistas-Productos/listarProductos.jsp</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/Productos.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/Categorias.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/RegistrarUsuario.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/DAO/ProductoDAOImplementar.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/Index.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Model/Producto.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/BajaProductos.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/web/index.jsp</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/BajaCategoria.java</file>
-            <file>file:/Users/manuelpiano31/Documents/inventario/InventaryWeb/src/java/Controller/actualizoCategoria.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/web/vista-usuario/recuperarContra.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/web/index.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/src/java/Controller/recuperarContraseña.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/src/java/Controller/actualizoCategoria.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/src/java/Controller/Salir.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/InventaryWeb/web/vista-usuario/validarCodigo.jsp</file>
         </group>
     </open-files>
 </project-private>

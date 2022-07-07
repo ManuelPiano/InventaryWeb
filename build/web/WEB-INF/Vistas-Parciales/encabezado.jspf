@@ -97,7 +97,7 @@
                       Usuarios
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li class="nav-item dropdown"><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="vista-usuario/infUsuario.jsp">Perfil</a></li>
                       <li class="nav-item dropdown"><a class="dropdown-item" href="#">Seguridad</a></li>
                       <li class="nav-item dropdown"><hr class="dropdown-divider"></li>
                       <li class="nav-item dropdown"><a class="dropdown-item" href="javascript:void(0)" id="closesesion" name="closesesion" onclick="salir();">Cerrar</a></li>

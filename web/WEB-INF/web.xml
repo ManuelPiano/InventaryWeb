@@ -40,6 +40,10 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>Controller.Login</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>recuperarContraseña</servlet-name>
+        <servlet-class>Controller.recuperarContraseña</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index</url-pattern>
@@ -79,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/sesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>recuperarContraseña</servlet-name>
+        <url-pattern>/recuperarPass</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

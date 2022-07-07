@@ -60,13 +60,13 @@
 						<span class="txt1">
 							Olvidaste
 						</span>
-						<a class="txt2" href="#">
+						<a class="txt2" href="vista-usuario/recuperarContra.jsp">
 							Ususario / Password?
 						</a>
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="vista-usuario/RegUsuario.jsp">
+						<a class="txt2" href="vista-usuario/validarCodigo.jsp">
 							Crear Cuenta
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>

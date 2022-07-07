@@ -1,4 +1,4 @@
-<%@page import="DAO.UsuarioDAOImplementar"%>
+
 <%@page import="DAO.UsuarioDAO"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
@@ -16,6 +16,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Latest compiled JavaScript -->
+        <%@include file = "/WEB-INF/Vistas-Parciales/css-js.jspf" %>
 
     </head>
                        
@@ -25,24 +26,6 @@
         <div class="container " style="padding-top: 25px">
             <div class="container" style="border-color: #000; background-color:#979bf7 ; border-top-width: 25px; padding-top: 50px"  >
         <form action="<%= request.getContextPath() %>/InicioSesion" class="container custom-container " style="height: 85vh;">
-                    <%
-               
-                String aviso = (String)request.getAttribute("aviso");
-                System.out.println("aviso");
-                aviso = "";
-                if(aviso.equals("nuevo"))
-                {
-                
-                }
-                else if (aviso.equals("coincidenciaCorreo"))
-                {
-                 String mensaje = (String)request.getParameter("Message");
-                 System.out.println(mensaje);
-            %>
-            <h4><b>Correo elctronico ya en uso, por favor utilice un correo nuevo</b></h4>
-            <%
-                }
-            %>
                       
  <input type="hidden" name="opcion" value="registrar">
   <div class="mb-3 mt-3 d-flex justify-content-center" >
