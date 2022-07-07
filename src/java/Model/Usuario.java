@@ -1,22 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package Model;
 
+/**
+ *
+ * @author Admin
+ */
 public class Usuario {
-    int id;
+        int id;
     String nombre;
     String apellido;
     String correo;
     String usuario;
     String clave;
-    int tipo;
-    int estado;
-    String pregunta;
-    String respuesta;
+    String tipo;
+    String estado;
     String fecha;
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String apellido, String correo, String usuario, String clave, int tipo, int estado, String pregunta, String respuesta, String fecha) {
+    public Usuario(int id, String nombre, String apellido, String correo, String usuario, String clave, String tipo, String estado, String fecha) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -25,13 +31,8 @@ public class Usuario {
         this.clave = clave;
         this.tipo = tipo;
         this.estado = estado;
-        this.pregunta = pregunta;
-        this.respuesta = respuesta;
         this.fecha = fecha;
     }
-
-    
-    
 
     public int getId() {
         return id;
@@ -81,36 +82,20 @@ public class Usuario {
         this.clave = clave;
     }
 
-    public int getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(int tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
-    public int getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
-    }
-
-    public String getPregunta() {
-        return pregunta;
-    }
-
-    public void setPregunta(String pregunta) {
-        this.pregunta = pregunta;
-    }
-
-    public String getRespuesta() {
-        return respuesta;
-    }
-
-    public void setRespuesta(String respuesta) {
-        this.respuesta = respuesta;
     }
 
     public String getFecha() {
@@ -120,7 +105,6 @@ public class Usuario {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-    
     
     
     

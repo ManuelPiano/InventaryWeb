@@ -42,24 +42,11 @@ public class UsuarioDaoImplementar implements UsuarioDAO{
                 usuario.setCorreo(resultadoSQL.getString("correo"));
                 usuario.setUsuario(resultadoSQL.getString("usuario"));
                 usuario.setClave(resultadoSQL.getString("clave"));
-                usuario.setTipo(resultadoSQL.getInt("tipo"));
-                usuario.setEstado(resultadoSQL.getInt("estado"));
-                usuario.setPregunta(resultadoSQL.getString("pregunta"));
-                usuario.setRespuesta(resultadoSQL.getString("respuesta"));
+                usuario.setTipo(resultadoSQL.getString("tipo"));
+                usuario.setEstado(resultadoSQL.getString("estado"));
                 usuario.setFecha(resultadoSQL.getString("fecha_registro"));
                 lista.add(usuario); //Agregar al array cada registro encontrado.
-                
-                /*lista.add(new Usuario(usuario.setId(resultadoSQL.getInt("id")),
-                        usuario.setNombre(resultadoSQL.getString("nombre")),
-                        usuario.setApellido(resultadoSQL.getString("apellido")),
-                        usuario.setCorreo(resultadoSQL.getString("correo")),
-                        usuario.setUsuario(resultadoSQL.getString("usuario")),
-                        usuario.setClave(resultadoSQL.getString("clave")),
-                        usuario.setTipo(resultadoSQL.getInt("tipo")),
-                        usuario.setEstado(resultadoSQL.getInt("estado")),
-                        usuario.setPregunta(resultadoSQL.getString("pregunta")),
-                        usuario.setRespuesta(resultadoSQL.getString("respuesta")),
-                        usuario.setFecharegistro(resultadoSQL.getString("fecha_registro"))));*/       
+                    
             }
         }catch(Exception ex){
             
