@@ -29,7 +29,7 @@
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
 				</div>
-      <form class="login100-form validate-form" action="InicioSesion" method="POST">
+      <form class="login100-form validate-form" action="sesion" method="POST">
           <span class="login100-form-title">
 						Sistema de Inventario
 					</span>

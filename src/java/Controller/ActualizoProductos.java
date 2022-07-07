@@ -10,7 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-
 /**
  *
  * @author manuelpiano31
@@ -50,7 +49,7 @@ public class ActualizoProductos extends HttpServlet {
         String stock_pro = request.getParameter("stock");
         String precio_pro = request.getParameter("precio");
         String unidad_medida = request.getParameter("UnidadMedida");
-        String categoria = request.getParameter("NomCatogoria");
+        String categoriaa = request.getParameter("NomCatogoria");
         
         ProductoDAO producto = new ProductoDAOImplementar();
         Producto pro = new Producto();
@@ -60,7 +59,7 @@ public class ActualizoProductos extends HttpServlet {
         pro.setStock(Double.parseDouble(stock_pro));
         pro.setPrecio(Double.parseDouble(precio_pro));
         pro.setUnidadMedida(unidad_medida);
-        pro.setCatogoria_nom(categoria);
+        pro.setCatogoria_nom(categoriaa);
         if(producto.guardarPro(pro)==true){
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Productos/editarProductos.jsp?aviso=ok");
             dispatcher.forward(request, response);
