@@ -13,7 +13,7 @@
         String stock = request.getParameter("stock");
         String precio_pro = request.getParameter("precio");
         String unidad_medida = request.getParameter("UnidadMedida");
-        String categoria = request.getParameter("NomCatogoria");
+        String categoria = request.getParameter("categoria");
     
     /*out.print("El ID de la categoria es: " + id_cat);
     out.print("El nombre de la categoria es: " + nombre_cat);
@@ -72,8 +72,7 @@
           <div class="mb-3 row">
           <label for="inputPassword" class="col-sm-2 col-form-label">Categoria Producto</label>
           <div class="col-sm-10">
-              <select class="form-select" aria-label="Default select example" name="categoria"></select>
-              <option selected value="<%= categoria %>" name="NomCatogoria" id="NomCatogoria" class="form-control" placeholder="Categoria" required="true">
+              <input type="text" value='<%= categoria %>' name="categoria" id="categoria" class="form-control" placeholder="Categoria" required="true">
           </div>
         </div>
           
